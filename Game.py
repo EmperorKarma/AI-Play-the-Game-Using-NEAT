@@ -1,4 +1,8 @@
-import pygame, sys, random 
+import pygame
+from pygame.locals import*
+import os
+import random
+import sys
 
 def draw_floor():
 	screen.blit(floor_surface,(floor_x_pos,900))
@@ -70,7 +74,7 @@ pygame.mixer.pre_init(frequency = 44100, size = 16, channels = 1, buffer = 512)
 pygame.init()
 screen = pygame.display.set_mode((576,1024))
 clock = pygame.time.Clock()
-game_font = pygame.font.Font('E:/Programms/Flappy Bird in Python/04B_19.TTF' , 40)
+game_font = pygame.font.Font('E:/Programms/Flappy Bird in Python/font.TTF',40)
 
 # Game Variables
 gravity = 0.3
